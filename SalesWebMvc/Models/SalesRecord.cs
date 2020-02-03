@@ -8,14 +8,14 @@ namespace SalesWebMvc.Models
         public int ID { get; set; }
         public DateTime Date { get; set; }
         public double Amount { get; set; }
-        public SalesStatus Status { get; set; }
+        public SaleStatus Status { get; set; }
         public Seller Seller { get; set; }
         public SalesRecord()
         {
 
         }
 
-        public SalesRecord(int iD, DateTime date, double amount, SalesStatus status, Seller seller)
+        public SalesRecord(int iD, DateTime date, double amount, SaleStatus status, Seller seller)
         {
             ID = iD;
             Date = date;
